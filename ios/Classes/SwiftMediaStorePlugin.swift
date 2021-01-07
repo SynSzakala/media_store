@@ -1,12 +1,12 @@
 import Flutter
 import UIKit
 
-public class SwiftImageGallerySaverPlugin: NSObject, FlutterPlugin {
+public class SwiftMediaStorePlugin: NSObject, FlutterPlugin {
     var result: FlutterResult?;
 
     public static func register(with registrar: FlutterPluginRegistrar) {
-      let channel = FlutterMethodChannel(name: "image_gallery_saver", binaryMessenger: registrar.messenger())
-      let instance = SwiftImageGallerySaverPlugin()
+      let channel = FlutterMethodChannel(name: "net.amond/media_store", binaryMessenger: registrar.messenger())
+      let instance = SwiftMediaStorePlugin()
       registrar.addMethodCallDelegate(instance, channel: channel)
     }
 
